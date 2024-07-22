@@ -1,6 +1,5 @@
 package br.com.menu.domain.model;
 
-import br.com.menu.domain.dto.OrderProductDto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

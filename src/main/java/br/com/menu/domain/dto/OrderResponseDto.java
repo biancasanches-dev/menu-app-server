@@ -2,10 +2,8 @@ package br.com.menu.domain.dto;
 
 import br.com.menu.domain.model.Order;
 import br.com.menu.domain.model.OrderProduct;
-import br.com.menu.domain.model.User;
 import br.com.menu.domain.model.enums.OrderStatus;
 import br.com.menu.domain.model.enums.Payment;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

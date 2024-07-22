@@ -1,7 +1,6 @@
 package br.com.menu.domain.dto;
 
 import br.com.menu.domain.model.User;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

@@ -2,7 +2,6 @@ package br.com.menu.service;
 
 import br.com.menu.domain.dto.OrderCreateDto;
 import br.com.menu.domain.dto.OrderResponseDto;
-import br.com.menu.domain.model.Order;
 import br.com.menu.domain.model.User;
 import br.com.menu.domain.model.enums.OrderStatus;
 

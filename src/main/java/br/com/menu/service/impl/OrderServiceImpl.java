@@ -98,12 +98,11 @@ public class OrderServiceImpl implements OrderService {
         if (status == null) {
             throw new IllegalArgumentException("Status cannot be null");
         }
-        List<OrderResponseDto> ordersByStatus = orderRepository.findByStatus(status)
+
+        return orderRepository.findByStatus(status)
                 .stream()
                 .map(OrderResponseDto::new)
                 .toList();
-
-        return ordersByStatus;
     }
 
     @Override
