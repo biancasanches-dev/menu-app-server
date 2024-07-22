@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -30,5 +32,7 @@ public class Order {
     private Double totalPrice;
     private OrderStatus status;
     private Payment payment;
-    private String createdAt;
+    private LocalDateTime createdAt;
+
+
 }

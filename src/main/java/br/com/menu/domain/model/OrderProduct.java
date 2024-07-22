@@ -1,5 +1,7 @@
 package br.com.menu.domain.model;
 
+import br.com.menu.domain.dto.OrderProductDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,15 +15,18 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderProduct {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private Long id;
 
-    @OneToOne
+    @ManyToOne
     private Product product;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
+    @JsonIgnore
     private Order order;
 
     private Integer quantity;
