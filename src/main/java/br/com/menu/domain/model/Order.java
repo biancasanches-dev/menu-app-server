@@ -11,8 +11,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Entity
-@Table(name = "tab_orders")
+@Entity(name = "tab_orders")
 @Getter
 @Setter
 @AllArgsConstructor
